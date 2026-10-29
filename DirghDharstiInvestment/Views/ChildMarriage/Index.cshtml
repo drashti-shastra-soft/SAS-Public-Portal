@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Child Marriage Planning | Financial Planning for Future Marriage Expenses";
+    ViewBag.MetaDescription = "Plan for future child marriage expenses with structured savings and financial planning based on long-term goals and financial requirements.";
+    ViewBag.MetaKeywords = "child marriage planning, marriage savings plan, child future planning, marriage financial planning, future marriage expenses";
+}
+@{
+    ViewData["Title"] = "Child Marriage";
+    Layout = "~/Views/Shared/_LayoutPages.cshtml";
+}
+
+<main class="main">
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>Child Marriage</h1>
+                        <p class="mb-0">
+                            Plan for your child’s future marriage expenses with a structured approach to savings and financial planning. Prepare in advance for expected costs while keeping long-term financial goals and requirements in mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li class="current">Child Marriage</li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-box">
+                        <h4>Services List</h4>
+                        <div class="services-list">
+                            <a href="@Url.Action("Index", "TermInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Term Insurance</span></a>
+                            <a href="@Url.Action("Index", "KeymanInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Keyman Insurance</span></a>
+                            <a href="@Url.Action("Index", "HealthInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Health Insurance</span></a>
+                            <a href="@Url.Action("Index", "LoanPromotionPlan")"><i class="bi bi-arrow-right-circle"></i><span>Loan Promotion Plan</span></a>
+                            <a href="@Url.Action("Index", "Retirement")"><i class="bi bi-arrow-right-circle"></i><span>Retirement</span></a>
+                            <a href="@Url.Action("Index", "ChildEducation")"><i class="bi bi-arrow-right-circle"></i><span>Child Education</span></a>
+                            <a href="@Url.Action("Index", "ChildMarriage")" class="active"><i class="bi bi-arrow-right-circle"></i><span>Child Marriage</span></a>
+                            <a href="@Url.Action("Index", "EstateCreation")"><i class="bi bi-arrow-right-circle"></i><span>Estate Creation</span></a>
+                        </div>
+                    </div><!-- End Services List -->
+
+                    <div class="help-box d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-headset help-icon"></i>
+                        <h4>Have a Question?</h4>
+                        <p class="d-flex align-items-center mt-2 mb-0">
+                            <i class="bi bi-telephone me-2"></i> <span><a href="tel:+919374728623">+91 93747 28623</a></span>
+                        </p>
+                        <p class="d-flex align-items-center mt-2 mb-1">
+                            <i class="bi bi-telephone me-2"></i> <span><a href="tel:+919904390003">+91 99043 90003</a></span>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope me-2"></i>
+                            <span><a href="mailto:dirghdrashtiinvestments@gmail.com">hello@secureassuranceservice.in</a></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+                    <img src="@Url.Content("~/image/services/Marriage.jpg")"
+                         alt="Child Marriage"
+                         class="img-fluid services-img" />
+
+                    <h3>Plan Ahead for Your Child’s Future Marriage</h3>
+                    <p>
+                        Future marriage expenses can be planned through disciplined savings and financial preparation. A structured approach can help build funds over time for expected marriage-related expenses while keeping other financial goals in consideration.
+                    </p>
+
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span>Supports systematic savings for future marriage expenses.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Helps align financial planning with expected future requirements.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Provides a structured approach to long-term financial planning for marriage expenses.</span></li>
+                    </ul>
+
+                    <p>
+                        Child Marriage Planning can help prepare for future expenses by considering the expected time horizon, savings capacity, financial goals, and changing costs. The suitable financial solution depends on individual requirements and applicable product terms.
+                    </p>
+
+                    <p>
+                        Plan ahead by reviewing expected marriage expenses, savings requirements, financial goals, and available financial options to build a suitable strategy for your child’s future marriage needs.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Service Details Section -->
+</main>

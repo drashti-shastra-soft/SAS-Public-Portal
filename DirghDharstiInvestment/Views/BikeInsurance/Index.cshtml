@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Bike Insurance";
+    Layout = "~/Views/Shared/_LayoutPages.cshtml";
+}
+
+<main class="main">
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>Bike Insurance</h1>
+                        <p class="mb-0">
+                            Bike Insurance helps protect your two-wheeler against covered risks such as accidents, damage, theft, and other eligible events. It can help manage bike-related expenses according to the selected policy terms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li class="current">Bike Insurance</li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+        <div class="container">
+            <div class="row gy-5">
+                <!-- Sidebar -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-box">
+                        <h4>Services List</h4>
+                        <div class="services-list">
+                            <a href="@Url.Action("Index", "Health")"><i class="bi bi-arrow-right-circle"></i><span>Health Insurance</span></a>
+                            <a href="@Url.Action("Index", "CarInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Car Insurance</span></a>
+                            <a href="@Url.Action("Index", "BikeInsurance")" class="active"><i class="bi bi-arrow-right-circle"></i><span>Bike Insurance</span></a>
+                            <a href="@Url.Action("Index", "PropertyInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Property Insurance</span></a>
+                            <a href="@Url.Action("Index", "TravelInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Travel Insurance</span></a>
+                            <a href="@Url.Action("Index", "MiscInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Misc Insurance</span></a>
+                            <a href="@Url.Action("Index", "LiabilityInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Liability Insurance</span></a>
+                            <a href="@Url.Action("Index", "MarineInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Marine Insurance</span></a>
+                            <a href="@Url.Action("Index", "AccidentInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Accident Insurance</span></a>
+                            <a href="@Url.Action("Index", "RuralInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Rural Insurance</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Help Box -->
+                    <div class="help-box d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-headset help-icon"></i>
+                        <h4>Have a Question?</h4>
+                        <p class="d-flex align-items-center mt-2 mb-0">
+                            <i class="bi bi-telephone me-2"></i> <span><a href="tel:+919374728623">+91 93747 28623</a></span>
+                        </p>
+                        <p class="d-flex align-items-center mt-2 mb-1">
+                            <i class="bi bi-telephone me-2"></i> <span><a href="tel:+919904390003">+91 99043 90003</a></span>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope me-2"></i>
+                            <span><a href="mailto:dirghdrashtiinvestments@gmail.com">hello@secureassuranceservice.in</a></span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+                    <img src="@Url.Content("~/image/services/Bike-Insurance.jpg")" alt="Bike Insurance" class="img-fluid services-img" />
+
+                    <h3>What is Bike Insurance?</h3>
+                    <p>
+                        Bike Insurance is designed to provide financial protection for your two-wheeler against covered risks. Depending on the selected policy, it may cover losses or expenses related to accidents, vehicle damage, theft, and other eligible events according to the policy terms.
+                    </p>
+
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span>Helps cover eligible two-wheeler-related risks and expenses.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>May help manage expenses resulting from covered accidents or bike damage.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>May provide coverage for theft and other covered events.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Coverage options can be selected based on your two-wheeler and insurance requirements.</span></li>
+                    </ul>
+
+                    <p>
+                        Bike Insurance can help reduce the financial impact of unexpected two-wheeler-related events. Coverage, exclusions, premium, deductibles, claim conditions, and applicable benefits depend on the selected policy and its terms.
+                    </p>
+
+                    <p>
+                        Before selecting Bike Insurance, review your two-wheeler requirements, coverage options, exclusions, premium, deductibles, policy period, and claim conditions to understand the policy properly.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Service Details Section -->
+
+</main>

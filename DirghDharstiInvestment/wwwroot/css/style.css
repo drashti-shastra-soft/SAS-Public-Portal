@@ -1,0 +1,82 @@
+﻿.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color) !important;
+    text-decoration: none;
+    background-color: #ac7b28 !important;
+}
+
+
+.services-list {
+    position: relative;
+}
+
+    .services-list small {
+        position: absolute;
+        top: -15px;
+        left: 0;
+        font-weight: 800;
+        color: transparent;
+        background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff, #ff0000);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-move 3s infinite;
+        animation: animated-gradient 2s infinite alternate-reverse;
+    }
+
+@keyframes animated-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navmenu .new-service-nav small {
+    margin-left: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: transparent;
+    background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff, #ff0000);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated-gradient 2s infinite alternate-reverse;
+    white-space: nowrap;
+}
+
+
+
+.services-list .new-service {
+    position: relative;
+}
+
+    .services-list .new-service small {
+        position: absolute;
+        top: 12px;
+        left: 335px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #000;
+    }
+
+
+
+@media (max-width: 767px) {
+    .services-list .new-service small {
+        top: 12px !important;
+        left: 210px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .services-list .new-service small {
+        top: 13px;
+        left: 601px;
+    }
+}

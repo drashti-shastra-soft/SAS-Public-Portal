@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Misc Insurance";
+    Layout = "~/Views/Shared/_LayoutPages.cshtml";
+}
+
+<main class="main">
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+        <div class="heading">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>Misc Insurance</h1>
+                        <p class="mb-0">
+                            Misc Insurance helps provide coverage for specific risks that may not fall under common insurance categories. It can help manage eligible financial losses and expenses according to the selected policy terms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li class="current">Misc Insurance</li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+        <div class="container">
+            <div class="row gy-5">
+
+                <!-- Sidebar -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-box">
+                        <h4>Services List</h4>
+                        <div class="services-list">
+                            <a href="@Url.Action("Index", "Health")"><i class="bi bi-arrow-right-circle"></i><span>Health Insurance</span></a>
+                            <a href="@Url.Action("Index", "CarInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Car Insurance</span></a>
+                            <a href="@Url.Action("Index", "BikeInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Bike Insurance</span></a>
+                            <a href="@Url.Action("Index", "PropertyInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Property Insurance</span></a>
+                            <a href="@Url.Action("Index", "TravelInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Travel Insurance</span></a>
+                            <a href="@Url.Action("Index", "MiscInsurance")" class="active"><i class="bi bi-arrow-right-circle"></i><span>Misc Insurance</span></a>
+                            <a href="@Url.Action("Index", "LiabilityInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Liability Insurance</span></a>
+                            <a href="@Url.Action("Index", "MarineInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Marine Insurance</span></a>
+                            <a href="@Url.Action("Index", "AccidentInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Accident Insurance</span></a>
+                            <a href="@Url.Action("Index", "RuralInsurance")"><i class="bi bi-arrow-right-circle"></i><span>Rural Insurance</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Help Box -->
+                    <div class="help-box d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-headset help-icon"></i>
+                        <h4>Have a Question?</h4>
+                        <p class="d-flex align-items-center mt-2 mb-0">
+                            <i class="bi bi-telephone me-2"></i> <span><a href="tel:+919374728623">+91 93747 28623</a></span>
+                        </p>
+                        <p class="d-flex align-items-center mt-2 mb-1">
+                            <i class="bi bi-telephone me-2"></i> <span><a href="tel:+919904390003">+91 99043 90003</a></span>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope me-2"></i>
+                            <span><a href="mailto:dirghdrashtiinvestments@gmail.com">hello@secureassuranceservice.in</a></span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+                    <img src="@Url.Content("~/image/services/Misc-Insurance.jpg")" alt="Misc Insurance" class="img-fluid services-img" />
+
+                    <h3>What is Misc Insurance?</h3>
+                    <p>
+                        Misc Insurance is designed for specific insurance needs that may not come under common insurance categories. Depending on the selected policy, it can provide coverage for certain risks, losses, or expenses according to the policy terms.
+                    </p>
+
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span>Helps provide coverage for specific and eligible risks.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>May help manage financial losses caused by covered events.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Can be considered for different insurance needs and situations.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Coverage options can be selected based on specific requirements.</span></li>
+                    </ul>
+
+                    <p>
+                        Misc Insurance can help manage financial risks that may not be covered under standard insurance categories. The coverage, exclusions, premium, claim conditions, and applicable benefits depend on the selected policy and its terms.
+                    </p>
+
+                    <p>
+                        Before selecting Misc Insurance, review your specific insurance needs, coverage options, exclusions, premium, policy period, and claim conditions to understand the policy properly.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Service Details Section -->
+</main>

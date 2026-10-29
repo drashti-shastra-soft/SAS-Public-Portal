@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <!-- SEO -->
+    <meta name="keywords" content="@ViewBag.MetaKeywords" />
+    <meta name="description" content="@ViewBag.MetaDescription" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="importmap"></script>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Favicons -->
+    @* <link href="https://bootstrapmade.com/content/demo/Append/assets/img/favicon.png" rel="icon">
+    <link href="https://bootstrapmade.com/content/demo/Append/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> *@
+    <link rel="shortcut icon" href="~/secure-assurance-services-faviconn.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="@Url.Content("~/css/bootstrap.min.css")" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css";>
+
+    @* <link rel="stylesheet" href="@Url.Content("~/css/bootstrap-icons.css")" /> *@
+
+    <link rel="stylesheet" href="@Url.Content("~/css/aos.css")" />
+
+    <link rel="stylesheet" href="@Url.Content("~/css/glightbox.min.css")" />
+
+    <link rel="stylesheet" href="@Url.Content("~/css/swiper-bundle.min.css")" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="@Url.Content("~/css/main.css")" />
+
+    <!-- Custom Css -->
+    <link href="@Url.Content("~/css/style.css")" rel="stylesheet" />
+
+</head>
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+
+        <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+            <a href="#hero" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Logo One --->
+                <img src="@Url.Content("~/image/secure-assurance-services-logo-white.png")" alt="Logo" class="site-logo" />
+                <!-- Logo Two --->
+                <img src="@Url.Content("~/image/secure-assurance-services-logo.png")" alt="New Logo" class="site-logo-alt">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="@Url.Action("Index", "Investment")"><span>Investment</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li> <a href="@Url.Action("Index", "AkshayPatra")" class="new-service-nav"> <span>Akshay Patra</span> <small>New</small> </a> </li>
+                                    <li><a href="@Url.Action("Index", "MutualFund")">Mutual Fund</a></li>
+                                    <li><a href="@Url.Action("Index", "FixedDeposit")">Fixed Deposit</a></li>
+                                    <li><a href="@Url.Action("Index", "Recurring")">Recurring</a></li>
+                                    <li><a href="@Url.Action("Index", "Bond")">Bond</a></li>
+                                    <li><a href="@Url.Action("Index", "PostOffice")">Post Office</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="@Url.Action("Index", "Insurance")"><span>Life Insurance</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="@Url.Action("Index", "TermInsurance")">Term Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "KeymanInsurance")">Keyman Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "HealthInsurance")">Health Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "LoanPromotionPlan")">Loan Promotion Plan</a></li>
+                                    <li><a href="@Url.Action("Index", "Retirement")">Retirement</a></li>
+                                    <li><a href="@Url.Action("Index", "ChildEducation")">Child Education</a></li>
+                                    <li><a href="@Url.Action("Index", "ChildMarriage")">Child Marriage</a></li>
+                                    <li><a href="@Url.Action("Index", "EstateCreation")">Estate Creation</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="@Url.Action("Index", "GeneralInsurance")"><span>General Insurance</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="@Url.Action("Index", "Health")">Health Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "CarInsurance")">Car Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "BikeInsurance")">Bike Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "PropertyInsurance")">Property Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "TravelInsurance")">Travel Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "MiscInsurance")">Misc Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "LiabilityInsurance")">Liability Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "MarineInsurance")">Marine Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "AccidentInsurance")">Accident Insurance</a></li>
+                                    <li><a href="@Url.Action("Index", "RuralInsurance")">Rural Insurance</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" href="#about">Get Started</a>
+        </div>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-about">
+                    <a href="#hero" class="logo d-flex align-items-center">
+                        <img src="@Url.Content("~/image/Secure-Assurance-Services-logo.png")" alt="New Logo" class="site-logo-alt">
+                    </a>
+                    <p>At Secure Assurance Service, we focus on helping you build a secure and growth-oriented financial future. With expert guidance, personalized strategies, and a commitment to transparency, we ensure your investments move toward long-term success.</p>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://twitter.com/share?url=https%3A%2F%2Fanupkapadialic.com%2Fabout" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fanupkapadialic.com%2Fabout" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fanupkapadialic.com%2Fabout" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/919374728623?text=Hello%20I%20want%20my%20financial%20plan"; target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="@Url.Action("Index", "Investment")">Investment</a></li>
+                        <li><a href="@Url.Action("Index", "Insurance")">Life Insurance</a></li>
+                        <li><a href="@Url.Action("Index", "GeneralInsurance")">General Education</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>
+                        304, 3rd Floor, Liberty Chambers,
+                        Opp. Triveni Apt, Timaliyawad Main Road,
+                        Nanpura, Surat - 395001
+                    </p>
+                    <p class="mt-4"><strong>Phone:</strong> <span><a href="tel:+919374728623">+91 93747 28623</a> | <a href="tel:+919904390003">+91 99043 90003</a></span></p>
+                    <p><strong>Email:</strong> <span><a href="mailto:dirghdrashtiinvestments.com">hello@secureassuranceservice.in</a></span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="sitename">Secure Assurance Service</strong> <span>All Rights Reserved</span></p>
+            <div class="credits">
+                Designed by <a href="https://shastrasoft.net/" target="_blank">Shastra Soft</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="@Url.Content("~/js/bootstrap.bundle.min.js")"></script>
+    <script src="@Url.Content("~/js/validate.js")"></script>
+    <script src="@Url.Content("~/js/aos.js")"></script>
+    <script src="@Url.Content("~/js/glightbox.min.js")"></script>
+    <script src="@Url.Content("~/js/purecounter_vanilla.js")"></script>
+    <script src="@Url.Content("~/js/imagesloaded.pkgd.min.js")"></script>
+    <script src="@Url.Content("~/js/isotope.pkgd.min.js")"></script>
+    <script src="@Url.Content("~/js/swiper-bundle.min.js")"></script>
+
+    <!-- Main JS File -->
+    <script src="@Url.Content("~/js/main.js")"></script>
+
+    <script defer
+            src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+            integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+            data-cf-beacon='{"version":"2024.11.0","token":"68c5ca450bae485a842ff76066d69420"}'
+            crossorigin="anonymous">
+    </script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
